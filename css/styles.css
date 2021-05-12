@@ -1,0 +1,525 @@
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #723885;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: #234078;
+    flex-shrink: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: #234078;
+    color: white;
+    flex-shrink: 1;
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline solid #F2D533;
+    cursor: pointer;
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a.active {
+    color: white;
+}
+.burger {
+    display: none;
+    flex-direction:column;
+}
+.bar {
+    width: 45px;
+    height: 10px;
+    background-color: white;
+    margin: 3px 0;
+    border-radius: 6px;
+}
+.burgerContainer {
+    display: none;
+    color: white;
+}
+.line {
+    width: 100px;
+    height: 5px;
+    background-color: #F2D533;
+    margin: 3px 0;
+    border-radius: 5px;
+}
+.nav li:hover {
+    text-decoration: underline solid #F2D533;
+    cursor: pointer;
+}
+.logoName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 1;
+}
+.logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    float: left;
+    padding-left: 30px;
+}
+.name {
+    color: white;
+    padding-left: 30px;
+    font-family: 'Bangers', cursive;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.aboutMe {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 150px;
+}
+.aboutMeTitle {
+    color: #723885;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "nothing pageTitle aboutMeIcons"
+}
+.nothing {
+    grid-area: nothing;
+}
+.pageTitle {
+    grid-area: pageTitle;
+    justify-self: center;
+}
+.aboutMeIcons {
+    grid-area: aboutMeIcons;
+    display: flex;
+    align-items: center;
+}
+.aboutMeIcons:hover {
+    cursor: pointer;
+}
+.iconLinkedin:hover {
+    transform: scale(1.2, 1.2);
+}
+.iconEmail:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.aboutMeBlock1 {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 50px 380px;
+    grid-template-areas:
+    "subTitle1 aboutMeImage1"
+    "subDescription1 aboutMeImage1"
+}
+.subTitle1 {
+    color: #723885;
+    grid-area: subTitle1;
+}
+.aboutMeImage1 {
+    grid-area: aboutMeImage1;
+    padding-left: 25px;
+}
+.subDescription1 {
+    grid-area: subDescription1;
+    padding-top: 25px;
+}
+
+.aboutMeBlock2 {
+    display: grid;
+    justify-content: center;
+    align-items: space-between;
+    width: 100%;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 50px 380px;
+    grid-template-areas:
+    "aboutMeImage2 subTitle2"
+    "aboutMeImage2 subDescription2"
+}
+.subTitle2 {
+    color: #723885;
+    grid-area: subTitle2;
+    padding-left: 25px;
+}
+.aboutMeImage2 {
+    grid-area: aboutMeImage2;
+}
+.subDescription2 {
+    grid-area: subDescription2;
+    padding-left: 25px;
+}
+
+.aboutMeBlock3 {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 50px 380px;
+    grid-template-areas:
+    "subTitle3 aboutMeImage3"
+    "subDescription3 aboutMeImage3"
+}
+.subTitle3 {
+    color: #723885;
+    grid-area: subTitle3;
+}
+.aboutMeImage3 {
+    grid-area: aboutMeImage3;
+    padding-left: 25px;
+}
+.subDescription3 {
+    grid-area: subDescription3;
+}
+
+.aboutMeBlock4 {
+    display: grid;
+    justify-content: center;
+    align-items: space-between;
+    width: 100%;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 50px 380px;
+    grid-template-areas:
+    "aboutMeImage4 subTitle4"
+    "aboutMeImage4 subDescription4"
+}
+.subTitle4 {
+    color: #723885;
+    grid-area: subTitle4;
+    padding-left: 25px;
+}
+.aboutMeImage4 {
+    grid-area: aboutMeImage4;
+}
+.subDescription4 {
+    grid-area: subDescription4;
+    padding-left: 25px;
+}
+
+.pagination {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "paginationLeft paginationRight"
+  }
+.pagination a:link {
+    color: black;
+    text-decoration: none;
+}
+.pagination a:hover {
+    text-decoration: underline solid #F2D533;
+    cursor: pointer;
+    color: black;
+}
+.pagination a:visited {
+    color: black;
+}
+.pagination a.active {
+    color: black;
+}
+.paginationLeft {
+    grid-area: paginationLeft;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+.paginationRight {
+    grid-area: paginationRight; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+  .paginationLeft h2:hover {
+    cursor: pointer;
+    text-decoration: underline solid #F2D533;
+
+}
+.paginationRight h2:hover {
+    cursor: pointer;
+    text-decoration: underline solid #F2D533;
+
+}
+
+
+.footer {
+    display: grid;
+    width: 100%;
+    color: white;
+    background-color: #234078;
+    grid-template-columns: 608px 832px;
+    grid-template-rows: 100x 100px 100px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    grid-template-areas:
+    "nothing footerTitle"
+    "iconLinkedin descriptionLinkedin"
+    "iconEmail descriptionEmail"
+}
+.nothing {
+    grid-area: nothing;
+}
+.footerTitle {
+    grid-area: footerTitle;
+    justify-self: flex-start;
+    text-decoration: underline solid #F2D533;
+}
+.iconLinkedin {
+    grid-area: iconLinkedin;
+    justify-self: flex-end;
+    padding-right: 10px;
+}
+.descriptionLinkedin {
+    grid-area: descriptionLinkedin;
+    justify-self: flex-start;
+}
+.iconEmail {
+    grid-area: iconEmail;
+    justify-self: flex-end;
+    padding-right: 10px;
+}
+.descriptionEmail {
+    grid-area: descriptionEmail;
+    justify-self: flex-start;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .header {
+        display: flex;
+        align-items: flex-end; 
+        justify-content: space-around;
+        background-color: #234078;
+        flex-shrink: 1;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    }
+    .logoName {
+    display: flex;
+    align-items: flex-end;
+    }
+    .logo {
+        padding-left: 0px;
+        padding-bottom: 25px;
+        align-items: flex-end; 
+    }
+    .name {
+        font-size: 24px;
+        align-items: center;
+        padding-left: 75px;
+    }
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 25px;
+    }
+
+    .aboutMeTitle {
+        color: #723885;
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px;
+        grid-template-areas:
+        "pageTitle" 
+        "aboutMeIcons"
+    }
+    .pageTitle {
+        grid-area: pageTitle;
+        justify-self: center;
+    }
+    .aboutMeIcons {
+        grid-area: aboutMeIcons;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        padding-bottom: 25px;
+    }
+
+    .aboutMeBlock1 {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 380px;
+        grid-template-areas:
+        "subTitle1"
+        "subDescription1"
+        "aboutMeImage1"
+    }
+    .subTitle1 {
+        color: #723885;
+        grid-area: subTitle1;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .aboutMeImage1 {
+        grid-area: aboutMeImage1;
+        padding-left: 0px;
+        padding-top: 0px;
+        justify-self: center;
+    }
+    .subDescription1 {
+        grid-area: subDescription1;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 0px;
+    }
+
+    .aboutMeBlock2 {
+        display: grid;
+        justify-content: center;
+        align-items: space-between;
+        width: 100%;
+        padding-top: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 380px;
+        grid-template-areas:
+        "subTitle2"
+        "subDescription2"
+        "aboutMeImage2"
+    }
+    .subTitle2 {
+        color: #723885;
+        grid-area: subTitle2;
+        padding-left: 25px;
+    }
+    .aboutMeImage2 {
+        grid-area: aboutMeImage2;
+        padding-left: 0px;
+        padding-top: 0px;
+        justify-self: center;
+    }
+    .subDescription2 {
+        grid-area: subDescription2;
+        padding-left: 25px;
+    }
+
+    .aboutMeBlock3 {
+        display: grid;
+        justify-content: center;
+        align-items: space-between;
+        width: 100%;
+        padding-top: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 380px;
+        grid-template-areas:
+        "subTitle3"
+        "subDescription3"
+        "aboutMeImage3"
+    }
+    .subTitle3 {
+        color: #723885;
+        grid-area: subTitle3;
+        padding-left: 25px;
+    }
+    .aboutMeImage3 {
+        grid-area: aboutMeImage3;
+        padding-left: 0px;
+        padding-top: 0px;
+        justify-self: center;
+    }
+    .subDescription3 {
+        grid-area: subDescription3;
+        padding-left: 25px;
+    }
+
+    .aboutMeBlock4 {
+        display: grid;
+        justify-content: center;
+        align-items: space-between;
+        width: 100%;
+        padding-top: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 380px;
+        grid-template-areas:
+        "subTitle4"
+        "subDescription4"
+        "aboutMeImage4"
+    }
+    .subTitle4 {
+        color: #723885;
+        grid-area: subTitle4;
+        padding-left: 25px;
+    }
+    .aboutMeImage4 {
+        grid-area: aboutMeImage4;
+        padding-left: 0px;
+        padding-top: 0px;
+        justify-self: center;
+    }
+    .subDescription4 {
+        grid-area: subDescription4;
+        padding-left: 25px;
+    }
+
+    .pagination {
+        padding-top: 50px;
+    }
+}
